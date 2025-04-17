@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=FElR8qsZtN1W&format=png&color=000000">
+    <script src="https://kit.fontawesome.com/c155ee6cff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="sher shivrajjpg.jpg" class="song">
+            <h1>Amhi Veer Jhunzaar</h1>
+            <p>Chinmay Mandlekar | Avadhoot Gandhi | Devdutta Manisha Baji</p>
+
+
+            <audio  id="song">
+                <source src="Amhi Veer Jhunzaar Sher Shivraj(PagalWorld).mp3" type="audio/mpeg">
+                <source src="01. Aashaayen.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="musiccontrols">
+                <div onclick="prevSong()"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div onclick="nextSong()"><i class="fa-solid fa-forward"></i></div>
+            </div>
+            
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
